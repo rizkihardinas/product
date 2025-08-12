@@ -1,0 +1,22 @@
+{
+    "name": "rizkihardinas/product",
+    "description": "Laravel package untuk CRUD Product dengan Livewire",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Rizkihardinas\\Product\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0|^11.0",
+        "livewire/livewire": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rizkihardinas\\Product\\Providers\\ProductServiceProvider"
+            ]
+        }
+    }
+}
