@@ -3,14 +3,14 @@
 namespace Rizkihardinas\Product\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Rizkihardinas\Product\Models\Barcode;
 use Illuminate\Database\Eloquent\SoftDeletes;
-class Product extends Model
+
+class Barcode extends Model
 {
     use SoftDeletes;
     protected $guarded = ['id'];
-
-    function barcodes(){
-        return $this->morphMany(Barcode::class,'productable');
+    
+    function productable(){
+        return $this->morphTo();
     }
 }
